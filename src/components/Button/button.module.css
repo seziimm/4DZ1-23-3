@@ -1,0 +1,12 @@
+.addButton {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}

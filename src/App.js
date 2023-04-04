@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Button from "./components/Button/Button";
+import Footer from "./components/Footer/Footer";
+import Text from "./components/Text/Text";
+import Header from "./components/Header/Header";
+const App = () => {
+    const handleButtonClick = (id) => {
+        console.log(`Button ${id} clicked`);
+    };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <div>
+            <Header/>
+            <Text />
+            <Button onClick={handleButtonClick} id={1}>Click me</Button>
+            <Button onClick={handleButtonClick} id={2}>Click me too</Button>
+            <Footer />
+
+        </div>
+
+    );
+};
 
 export default App;
